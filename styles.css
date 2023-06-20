@@ -109,6 +109,10 @@
 .text-xxl {
     font-size: var(--text-size-xxl);
 }
+/* Text Styles */
+.italic {
+    font-style: italic;
+}
 
 /* Text Shadow */
 .text-shadow-black {
