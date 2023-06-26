@@ -3,7 +3,10 @@
 .canvas {
     display: flex;
     flex-direction: column;
+    
     width: 100%;
+    
+    
 }
 
 .navbar {
@@ -14,12 +17,16 @@
 }
 
 .body {
+    
+
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
 .footer {
+    
+
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -40,17 +47,23 @@
 }
 
 .box-col-s {
+    
+
     display: flex;
     flex-direction: column;
     width: 33vw;
     height: 100%;
+    
 }
 
 .box-col-m {
+    
+
     display: flex;
     flex-direction: column;
     width: 66vw;
     height: 100%;
+    
 }
 
 .box-col-l {
@@ -73,12 +86,13 @@
 }
 
 .box-row-l {
+    
+
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
-/* Themes */
 .dark-theme {
     color: rgb(191, 204, 204);
     background-color: black;
@@ -89,7 +103,6 @@
     background-color: rgba(184, 216, 221, 0.76);
 }
 
-/* Text Font Size */
 .text-s {
     font-size: var(--text-size-s);
 }
@@ -109,12 +122,7 @@
 .text-xxl {
     font-size: var(--text-size-xxl);
 }
-/* Text Styles */
-.italic {
-    font-style: italic;
-}
 
-/* Text Shadow */
 .text-shadow-black {
     text-shadow: var(--shadow-text-black);
 }
@@ -122,39 +130,12 @@
 .text-shadow-white {
     text-shadow: var(--shadow-text-white);
 }
+/* s - m - l - xl - xxl */
 
-/* Center DIV (Parent position: relative;) */
-.center-horizontal {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
+.stick-on-top {
+	position: fixed;
+	width: 100%;
+    top: 0;
+	box-shadow: 0px 6px 12px #888888;
+	z-index: 99;
 }
-.center-vertical {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  padding: 10px;
-}
-.center-absolut {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-}
-
-/* Gray Shades Background Color */
-.bg-gray-light-1 { background-color: var(--gray-light-1); }
-.bg-gray-light-2 { background-color: var(--gray-light-2); }
-.bg-gray-light-3 { background-color: var(--gray-light-3); }
-.bg-gray-dark-1 { background-color: var(--gray-dark-1); }
-.bg-gray-dark-2 { background-color: var(--gray-dark-2); }
-.bg-gray-dark-3 { background-color: var(--gray-dark-3); }
-
-/* Gray Shades Text Color */
-.text-gray-light-1 { color: var(--gray-light-1); }
-.text-gray-light-2 { color: var(--gray-light-2); }
-.text-gray-light-3 { color: var(--gray-light-3); }
-.text-gray-dark-1 { color: var(--gray-dark-1); }
-.text-gray-dark-2 { color: var(--gray-dark-2); }
-.text-gray-dark-3 { color: var(--gray-dark-3); }
