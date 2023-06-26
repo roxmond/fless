@@ -3,41 +3,44 @@
   <head>
     <title>Fless Framework</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://roxmond.github.io/fless/styles.css">
+    <link rel="stylesheet" href="./index.css">
 
 
     
   </head>
   <body>
-    <h2 class="text-shadow-black">Hello Fless!</h2><pre> // - <u><i>Fle</u></i>xible <u><i>S</u></i>tyle <u><i>S</u></i>heets</pre>
+    <h2 class="text-shadow-black">Hello Fless!</h2>
+    <pre> // - <u><i>Fle</u></i>xible <u><i>S</u></i>tyle <u><i>S</u></i>heets</pre>
+    <pre> // - To use the framework add the following links into your HTML. <br> // - Add <code class="dark-theme">&#706;link rel="stylesheet" href="https://roxmond.github.io/fless/styles.css"&#707;</code> into the <code class="dark-theme">&#706;HEAD&#707;</code> section of your HTML.</pre>
     <hr>
 
-    <div>
-    <label for="categories">Categories:</label>
-        <select name="categories" id="categories">
-            <option>Texts</option>
-            <option value="textshades">- Gray Shades</option>
-            <option value="textshadows">- Shadows</option>
-            <option value="fontsizes">- Font Sizes</option>
-            <option>Responsive Design</option>
-            <option value="textshadows">- Cols</option>
-            <option value="sizes">- Rows</option>
-            <option>Themes</option>
-            <option value="darkthemes">- Dark Themes</option>
-            <option value="lightthemes">- Light Themes</option>
-            <option>Alignment</option>
-            <option value="#background">- Center DIV</option>
-            <option>Background</option>
-            <option value="bgshades">- Gray Shades</option>
-        </select>
+    <div class="menu stick-on-top">
 
-        <p class="text-s italic"> [ s for Small
-            - m for Medium
-            - l for Large
-            - xl for XLarge
-            - xxl for XXLarge ]</p>
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><span></span></label>
+        <label for="active" class="close"></label>
+        <div class="wrapper">
+          <ul>
+            <li><a href="#text">Text</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#background">Background</a></li>
+          </ul>
+
+    </div>
+
+    </div>
+
+    <div>
         <hr>
+        <h2 class="text-xl">Documentation</h2>
+        <pre>Use the class names into your HTML elements to apply its attributes.<br><i>Ex. If you want to apply a <b>large</b> paragraph text, you have to use <b>text-l</b> as a class name into your <code class="dark-theme">&#706;p&#707;</code> element as follow: <code class="dark-theme">&#706;p class="<b>text-l</b>"> Hello World! &#706;/p&#707;</code></i>
+        <p>Globaly you can use our messure as the following: [ s for Small - m for Medium - l for Large - xl for XLarge - xxl for XXLarge ]</p>
+        <hr>
+        
 
         <h3 class="text-xl" id="text">Text</h2>
             <p></p>
