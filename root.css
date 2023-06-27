@@ -7,6 +7,9 @@
 
     --shadow-text-black: -1px 1px 2px #898686e0;
     --shadow-text-white: -1px 1px 2px #e7e3e3e0;
+    --shadow-text-blue: -1px 1px 2px #7947eee0;
+    --shadow-text-red: -1px 1px 2px #ee4747e0;
+    --shadow-text-3d: -1px 1px 2px #ee4747e0, 1px 1px 2px #478aeee0;
 
     --gray-light-1: rgb(240,240,240);
     --gray-light-2: rgb(210,210,210);
