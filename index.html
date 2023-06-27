@@ -1,11 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="smooth">
   <head>
     <title>Fless Framework</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://roxmond.github.io/fless/styles.css">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./root.css">
 
 
     
@@ -13,21 +15,20 @@
   <body>
     <h2 class="text-shadow-black">Hello Fless!</h2>
     <pre> // - <u><i>Fle</u></i>xible <u><i>S</u></i>tyle <u><i>S</u></i>heets</pre>
-    <pre> // - To use the framework add the following links into your HTML. <br> // - Add <code class="dark-theme">&#706;link rel="stylesheet" href="https://roxmond.github.io/fless/styles.css"&#707;</code> into the <code class="dark-theme">&#706;HEAD&#707;</code> section of your HTML.</pre>
+    <pre> // - To use the framework add the following links into your HTML. <br> // - Add <code class="code-theme">&#706;link rel="stylesheet" href="https://roxmond.github.io/fless/styles.css"&#707;</code> into the <code class="code-theme">&#706;HEAD&#707;</code> section of your HTML.</pre>
     <hr>
 
-    <div class="menu stick-on-top">
+    <div class="menu">
 
         <input type="checkbox" id="active">
         <label for="active" class="menu-btn"><span></span></label>
         <label for="active" class="close"></label>
         <div class="wrapper">
           <ul>
-            <li><a href="#text">Text</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#background">Background</a></li>
+            <a href="#text"><li>Text</li></a>
+            <a href="#responsive-design"><li>Responsive Design</li></a>
+            <a href="#themes"><li>Themes</li></a>
+            <a href="#functional"><li>Functional</li></a>
           </ul>
 
     </div>
@@ -37,26 +38,145 @@
     <div>
         <hr>
         <h2 class="text-xl">Documentation</h2>
-        <pre>Use the class names into your HTML elements to apply its attributes.<br><i>Ex. If you want to apply a <b>large</b> paragraph text, you have to use <b>text-l</b> as a class name into your <code class="dark-theme">&#706;p&#707;</code> element as follow: <code class="dark-theme">&#706;p class="<b>text-l</b>"> Hello World! &#706;/p&#707;</code></i>
+        <pre>Use the class names into your HTML elements to apply its attributes.<br><i>Ex. If you want to apply a <b>large</b> paragraph text, you have to use <b>text-l</b> as a class name into your <code class="code-theme">&#706;p&#707;</code> element as follow: <code class="code-theme">&#706;p class="<b>text-l</b>"> Hello World! &#706;/p&#707;</code></i>
         <p>Globaly you can use our messure as the following: [ s for Small - m for Medium - l for Large - xl for XLarge - xxl for XXLarge ]</p>
         <hr>
-        
 
-        <h3 class="text-xl" id="text">Text</h2>
-            <p></p>
+        <h3 class="text-xl" id="text">Text</h3>
+        <p>// - Sizes</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Class Names</th>
+                <th>Attributes</th>
+                <th>Samples</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>.text-s</td>
+                <td>14px</td>
+                <td class="text-s">Hello Fless</td>
+              </tr>
+              <tr>
+                <td>.text-m</td>
+                <td>16px</td>
+                <td class="text-m">Hello Fless</td>
+              </tr>
+              <tr>
+                <td>.text-l</td>
+                <td>18px</td>
+                <td class="text-l">Hello Fless</td>
+              </tr>
+              <tr>
+                <td>.text-xl</td>
+                <td>22px</td>
+                <td class="text-xl">Hello Fless</td>
+              </tr>
+              <tr>
+                <td>.text-xxl</td>
+                <td>30px</td>
+                <td class="text-xxl">Hello Fless</td>
+              </tr>
+            </tbody>
+          </table>
 
-        <h3 class="text-xl" id="responsive-design">Responsive Design</h2>
-            <p></p>
+          <p>// - Effects</p>
 
-        <h3 class="text-xl" id="themes">Themes</h2>
-            <p></p>
+          <table>
+            <thead>
+              <tr>
+                <th>Class Names</th>
+                <th>Attributes</th>
+                <th>Samples</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>.text-shadow-black</td>
+                <td>text-shadow: -1px 1px 2px #898686e0</td>
+                <td class="text-shadow-black">Hello Fless</td>
+              </tr>
+              <tr>
+                <td>.text-shadow-white</td>
+                <td>text-shadow: -1px 1px 2px #e7e3e3e0</td>
+                <td class="text-shadow-white dark-theme">Hello Fless</td>
+              </tr>
+              <tr>
+                <td>.text-shadow-blue</td>
+                <td>text-shadow: -1px 1px 2px #7947eee0</td>
+                <td class="text-shadow-blue">Hello Fless</td>
+              </tr>
+              <tr>
+                <td>.text-shadow-red</td>
+                <td>text-shadow: -1px 1px 2px #ee4747e0</td>
+                <td class="text-shadow-red">Hello Fless</td>
+              </tr>
+              <tr>
+                <td>.text-shadow-3d</td>
+                <td> color:rgba(240, 237, 237, 0.87) | text-shadow: -1px 1px 2px #ee4747e0, 1px 1px 2px #478aeee0</td>
+                <td class="text-shadow-3d">Hello Fless</td>
+              </tr>
+            </tbody>
+          </table>
+
+        <h3 class="text-xl" id="themes">Themes</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Class Names</th>
+              <th>Attributes</th>
+              <th>Samples</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.dark-theme</td>
+              <td>color: rgb(223, 226, 226) | background-color: rgba(0, 0, 0, 0.76)</td>
+              <td class="dark-theme">Hello Fless</td>
+            </tr>
+            <tr>
+              <td>.light-theme</td>
+              <td>color: rgb(29, 31, 31) | background-color: rgba(247, 255, 253, 0.76)</td>
+              <td class="light-theme">Hello Fless</td>
+            </tr>
+            <tr>
+              <td>.code-theme</td>
+              <td>color: rgb(29, 31, 31) | background-color: rgba(196, 219, 170, 0.76)</td>
+              <td class="code-theme">Hello Fless</td>
+            </tr>
+            <tr>
+              <td>.blue-theme</td>
+              <td>color: rgb(223, 226, 226) | background-color: rgba(42, 29, 163, 0.76)</td>
+              <td class="blue-theme">Hello Fless</td>
+            </tr>
+            <tr>
+              <td>.red-theme</td>
+              <td>color: rgb(223, 226, 226) | background-color: rgba(163, 29, 29, 0.76) </td>
+              <td class="red-theme">Hello Fless</td>
+            </tr>
+          </tbody>
+        </table>
             
-        <h3 class="text-xl" id="alignment">Alignment</h2>
-            <p></p>
-        
-
-        <h3 class="text-xl" id="background">Background</h2>
-            <p></p>
+        <h3 class="text-xl" id="functional">Functional</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Class Names</th>
+              <th>Attributes</th>
+              <th>Explenation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>.stick-on-top</td>
+              <td>position: fixed | width: 100% | top: 0 | z-index: 99</td>
+              <td>Use it to stick an element on the top</td>
+            </tr>
+          </tbody>
+        </table>
+      
 
     </div>
 
