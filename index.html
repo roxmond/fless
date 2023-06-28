@@ -3,7 +3,7 @@
   <head>
     <title>Fless Framework</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://roxmond.github.io/fless/styles.css">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./styles.css">
@@ -13,34 +13,38 @@
     
   </head>
   <body>
-    <h2 class="text-shadow-black">Hello Fless!</h2>
-    <pre> // - <u><i>Fle</u></i>xible <u><i>S</u></i>tyle <u><i>S</u></i>heets</pre>
-    <pre> // - To use the framework add the following links into your HTML. <br> // - Add <code class="code-theme">&#706;link rel="stylesheet" href="https://roxmond.github.io/fless/styles.css"&#707;</code> into the <code class="code-theme">&#706;HEAD&#707;</code> section of your HTML.</pre>
+
+    <div class="header">
+      <h2 class="text-shadow-black">Hello Fless!</h2>
+      <p> // - <u><i>Fle</u></i>xible <u><i>S</u></i>tyle <u><i>S</u></i>heets</p>
+      <p> // - To use the framework add the following links into your HTML. <br> // - Add <code class="code-theme">&#706;link rel="stylesheet" href="https://roxmond.github.io/fless/styles.css"&#707;</code> into the <code class="code-theme">&#706;HEAD&#707;</code> section of your HTML.</p>
+    </div>
     <hr>
 
     <div class="menu">
-
-        <input type="checkbox" id="active">
-        <label for="active" class="menu-btn"><span></span></label>
-        <label for="active" class="close"></label>
-        <div class="wrapper">
+      <input type="checkbox" id="active">
+      <label for="active" class="menu-btn"><span></span></label>
+      <label for="active" class="close"></label>
+      
+      <div class="wrapper">
           <ul>
             <a href="#text"><li>Text</li></a>
             <a href="#themes"><li>Themes</li></a>
             <a href="#functional"><li>Functional</li></a>
           </ul>
-
+      </div>
     </div>
 
-    </div>
-
-    <div>
-        <hr>
+    <hr>
+      <div class="documentation">
+        
         <h2 class="text-xl">Documentation</h2>
-        <pre>Use the class names into your HTML elements to apply its attributes.<br><i>Ex. If you want to apply a <b>large</b> paragraph text, you have to use <b>text-l</b> as a class name into your <code class="code-theme">&#706;p&#707;</code> element as follow: <code class="code-theme">&#706;p class="<b>text-l</b>"> Hello World! &#706;/p&#707;</code></i>
+        <p>Use the class names into your HTML elements to apply its attributes.<br><i>Ex. If you want to apply a <b>large</b> paragraph text, you have to use <b>text-l</b> as a class name into your <code class="code-theme">&#706;p&#707;</code> element as follow: <code class="code-theme">&#706;p class="<b>text-l</b>"> Hello World! &#706;/p&#707;</code></i></p>
         <p>Globaly you can use our messure as the following: [ s for Small - m for Medium - l for Large - xl for XLarge - xxl for XXLarge ]</p>
+      </div>
         <hr>
 
+      <div class="main">
         <h3 class="text-xl" id="text">Text</h3>
         <p>// - Sizes</p>
           <table>
@@ -175,9 +179,7 @@
             </tr>
           </tbody>
         </table>
-      
-
-    </div>
+      </div>
 
 
     
