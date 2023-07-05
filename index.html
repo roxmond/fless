@@ -2,9 +2,9 @@
 <html lang="en" class="smooth">
   <head>
     <title>Fless Framework</title>
-    <link rel="icon" type="image/x-icon" href="/assets/imgs/fless-ico-2.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/imgs/fless-ico-2.ico">
     <link rel="stylesheet" href="https://roxmond.github.io/fless/styles.css">
     <script src="https://kit.fontawesome.com/199e2b799f.js" crossorigin="anonymous"></script>
 
@@ -17,39 +17,63 @@
   </head>
   <body>
 
+
+  <div class="container">
+
     <div class="header">
-      <h2 class="text-shadow-black">Hello Fless!</h2>
+      
+      <img src="./assets/imgs/fless-logo-1.png" class="logo">
+      
+      
+    </div>
+
+    <div class="sub-head">
       <p> // - <u><i>Fle</u></i>xible <u><i>S</u></i>tyle <u><i>S</u></i>heets</p>
       <p> // - To use the framework add the following links into your HTML. <br><br> // - Add <code class="code-theme">&lt;link rel="stylesheet" href="https://roxmond.github.io/fless/styles.css"&gt;</code> into the <code class="code-theme">&lt;HEAD&gt;</code> section of your HTML.</p>
     </div>
-    <hr>
+    
 
     <div class="menu">
-      <input type="checkbox" id="active">
-      <label for="active" class="menu-btn"><span></span></label>
-      <label for="active" class="close"></label>
       
-      <div class="wrapper">
-          <ul>
-            <a href="#text"><li>Text</li></a>
-            <a href="#themes"><li>Themes</li></a>
-            <a href="#functional"><li>Functional</li></a>
-          </ul>
+
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#text">Text</a></li>
+            <li><a class="menu__item" href="#t-sizes">&emsp;// - Sizes</a></li>
+            <li><a class="menu__item" href="#t-effects">&emsp;// - Effects</a></li>
+          <li><a class="menu__item" href="#themes">Themes</a></li>
+          <li><a class="menu__item" href="#functional">Functional</a></li>
+          <li><a class="menu__item" href="#f-submit">&emsp;// - Submit Button</a></li>
+        </ul>
       </div>
+
+
     </div>
 
-    <hr>
-      <div class="documentation">
-        
-        <h2 class="text-xl">Documentation</h2>
-        <p>Use the class names into your HTML elements to apply its attributes.<br><i>Ex. If you want to apply a <b>large</b> paragraph text, you have to use <b>text-l</b> as a class name into your <code class="code-theme">&lt;p&gt;</code> element as follow: <code class="code-theme">&lt;p class="<b>text-l</b>"&gt; Hello World! &lt;/p&gt;</code></i></p>
-        <p>Globaly you can use our messure as the following: [ s for Small - m for Medium - l for Large - xl for XLarge - xxl for XXLarge ]</p>
-      </div>
-        <hr>
+    
+    
+    
+    
 
-      <div class="main">
+ 
+
+  <div class="main">
+  <div class="card">
+    <div class="documentation">
+        
+      <h2 class="text-xl">Documentation</h2>
+      <p>Use the class names into your HTML elements to apply its attributes.<br><i>Ex. If you want to apply a <b>large</b> paragraph text, you have to use <b>text-l</b> as a class name into your <code class="code-theme">&lt;p&gt;</code> element as follow: <code class="code-theme">&lt;p class="<b>text-l</b>"&gt; Hello World! &lt;/p&gt;</code></i></p>
+      <p>Globaly you can use our messure as the following: [ s for Small - m for Medium - l for Large - xl for XLarge - xxl for XXLarge ]</p>
+    </div>
+      
+
         <h3 class="text-xl" id="text">Text</h3>
-        <p>// - Sizes</p>
+        <p id="t-sizes">// - Sizes</p>
           <table>
             <thead>
               <tr>
@@ -86,9 +110,12 @@
               </tr>
             </tbody>
           </table><br>
-          <hr>
+          
+  </div>
 
-          <p>// - Effects</p>
+  <div class="card">
+
+          <p id="t-effects">// - Effects</p>
 
           <table>
             <thead>
@@ -127,7 +154,10 @@
             </tbody>
           </table>
           <br>
-          <hr>
+          
+  </div>
+
+  <div class="card">
 
         <h3 class="text-xl" id="themes">Themes</h3>
 
@@ -168,7 +198,10 @@
           </tbody>
         </table>
         <br>
-          <hr>
+          
+  </div>
+
+  <div class="card">
             
         <h3 class="text-xl" id="functional">Functional</h3>
         <table>
@@ -188,42 +221,82 @@
           </tbody>
         </table>
         <br>
-        <hr>
-        <p>// - Submit Button</p>
+        
+  </div>
+
+  <div class="card">
+        <p id="f-submit">// - Submit Button</p>
         <br>
         
-            
-        <table>
+        <!-- Large Table -->    
+        <table class="table-l">
           <thead>
-            <tr>
-              <th>Head</th>
-              <th>Body</th>
-              <th>Sample</th>
+            <tr class="tr-l">
+              <th class="th-l-1">Head</th>
+              <th class="th-l-2">Body</th>
+              <th class="th-l-3">Sample</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>
+              <td class="td-l-1">
               &lt;script src="https://kit.fontawesome.com/199e2b799f.js" crossorigin="anonymous"&gt;&lt;/script&gt;
               </td>
-              <td>&lt;button class="button"&gt;
+              <td class="td-l-2">&lt;button class="button"&gt;
                 &lt;span class="text"&gt;Submit&lt;/span&gt;
                 &lt;i class="fa-solid fa-check icon"&gt;&lt;/i&gt;
               &lt;/button&gt;</td>
-              <td> <button class="button">
+              <td class="td-l-3"> <button class="button">
                 <span class="text">Submit</span>
                 <i class="fa-solid fa-check icon"></i>
             </button></td>
             </tr>
           </tbody>
         </table>
-
-
         <br>
-          <hr>
-      </div>
+        <!-- Mobile Table --> 
+        <table class="table-break">
+          <thead>
+            <tr>
+              <th>Head</th>
+            </tr>
+          </thead>
+          <td>
+            &lt;script src="https://kit.fontawesome.com/199e2b799f.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+            </td>
 
+            <thead>
+              <tr>
+                <th>Body</th>
+              </tr>
+            </thead>
+            <td class="td-l-2">&lt;button class="button"&gt;
+              &lt;span class="text"&gt;Submit&lt;/span&gt;
+              &lt;i class="fa-solid fa-check icon"&gt;&lt;/i&gt;
+            &lt;/button&gt;</td>
 
+            <thead>
+              <tr>
+                <th>Sample</th>
+              </tr>
+            </thead>
+            <td class="td-l-3"> <button class="button">
+              <span class="text">Submit</span>
+              <i class="fa-solid fa-check icon"></i>
+          </button></td>
+
+        </table>
+        <br>
+          
+  </div>
+      
+
+  </div>
+
+    <div class="footer">
+      <a href="https://github.com/roxmond/" class="f-link">Visit my GitHub for more</a>
+    </div>
+  </div>
     
         
             
