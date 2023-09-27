@@ -219,3 +219,91 @@ html {
     transition-delay: .124s;
 
 }
+/* Defines a full width page with auto height */
+.page {
+    width: 100vh;
+    height: auto;
+}
+/* Uses transition to fade in or/and out */
+.fade-in {
+    transition: all ease-in 1s;
+}
+.fade-out {
+    transition: all ease-out 1s;
+}
+.fade-in-out {
+    transition: all ease-in-out 1s;
+}
+/* Flexbox */
+.flex {
+    display: flex;
+}
+.direction-col {
+    flex-direction: column;
+}
+.direction-col-rev {
+    flex-direction: column-reverse;
+}
+.direction-row {
+    flex-direction: row;
+}
+.direction-row-rev {
+    flex-direction: row-reverse;
+}
+.justify-baseline {
+    justify-content: baseline;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: end;
+}
+.justify-first-baseline {
+    justify-content: first baseline;
+}
+.justify-flex-end {
+    justify-content: flex-end;
+}
+.justify-flex-start {
+    justify-content: flex-start;
+}
+.justify-last-baseline {
+    justify-content: last baseline;
+}
+.justify-left {
+    justify-content: left;
+}
+.justify-right {
+    justify-content: right;
+}
+.justify-safe {
+    justify-content: safe;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.justify-start {
+    justify-content: start;
+}
+.justify-stretch {
+    justify-content: stretch;
+}
+.align-baseline {
+    align-items: baseline;
+}
+.align-center {
+    align-items: center;
+}
+.align-flex-end {
+    align-items: flex-end;
+}
+.align-flex-start {
+    align-items: flex-start;
+}
